@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSalmon"
+    android:orientation="vertical"
+    tools:context=".ReservationFragment">
+
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/colorPrimaryDark">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="예약하기"
+                    android:textColor="#ffffff"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:shadowColor="#000000"
+                    android:shadowRadius="2.0"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/userRemainPtNumOfReservation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/back2"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:firstDayOfWeek="1">
+
+            </CalendarView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button_gray"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="#ffffff"
+                android:text="트레이너를 선택하세요."
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowRadius="1.0"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"/>
+
+
+            <Spinner
+                android:id="@+id/trainerSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"></Spinner>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button_gray"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:text="시간을 선택하세요."
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowRadius="1.0"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"/>
+
+            <Spinner
+                android:id="@+id/timeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/round"
+                android:layout_gravity="center"></Spinner>
+
+            <Button
+                android:id="@+id/searchButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_button"
+                android:text="PT 검색"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowRadius="2.0"
+                android:shadowDx="2.0"
+                android:shadowDy="2.0"/>
+
+            <ListView
+                android:id="@+id/ptListView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:dividerHeight="10dp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:padding="5dp"-->
+    <!--android:background="@drawable/back2">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="남은 "-->
+    <!--android:textColor="#000000" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="PT횟수"-->
+    <!--android:textColor="@color/colorWarning" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="는"-->
+    <!--android:textColor="#000000" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="7번"-->
+    <!--android:textColor="@color/colorPrimaryDark"-->
+    <!--android:id="@+id/userRemainPtNumOfReservation"/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="남았습니다."-->
+    <!--android:textColor="#000000" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:orientation="horizontal">-->
+
+
+    <!--<TextView-->
+    <!--android:layout_width="160dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="60dp"-->
+    <!--android:text="시간"-->
+    <!--android:textColor="#000000" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingRight="10dp"-->
+    <!--android:background="@drawable/round">-->
+
+
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

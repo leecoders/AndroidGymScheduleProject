@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:padding="5dp"
+    android:background="@drawable/back2">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="계정삭제"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:background="@drawable/round_button"
+            android:id="@+id/deleteButton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:gravity="center">
+
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="정보변경"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:background="#00a7f5"
+            android:id="@+id/userChangeOfadmin"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/back2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_button">
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디 : "
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userID"
+                android:text="아이디"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+    
+        </LinearLayout>
+
+    
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름 : "
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userName"
+                android:text="이름"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성별 : "
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userGender"
+                android:text="성별"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+    
+        </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="나이 : "
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+    
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/userAge"
+                android:text="나이"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="50dp"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/userinfoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/info"
+            android:scaleType="centerInside"
+            android:background="@color/colorSalmon"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="trainer">
+        <item>무관</item>
+        <item>황다현</item>
+        <item>이재민</item>
+        <item>김종범</item>
+        <item>임성민</item>
+        <item>한상국</item>
+        <item>김연형</item>
+    </string-array>
+
+    <string-array name="time">
+        <item>무관</item>
+        <item>09:00~10:00</item>
+        <item>10:00~11:00</item>
+        <item>11:00~12:00</item>
+        <item>12:00~13:00</item>
+        <item>13:00~14:00</item>
+        <item>14:00~15:00</item>
+        <item>15:00~16:00</item>
+        <item>16:00~17:00</item>
+        <item>17:00~18:00</item>
+        <item>18:00~19:00</item>
+        <item>19:00~20:00</item>
+        <item>20:00~21:00</item>
+        <item>21:00~22:00</item>
+    </string-array>
+
+    <string-array name="timeoftrainer">
+        <item>09:00~10:00</item>
+        <item>10:00~11:00</item>
+        <item>11:00~12:00</item>
+        <item>12:00~13:00</item>
+        <item>13:00~14:00</item>
+        <item>14:00~15:00</item>
+        <item>15:00~16:00</item>
+        <item>16:00~17:00</item>
+        <item>17:00~18:00</item>
+        <item>18:00~19:00</item>
+        <item>19:00~20:00</item>
+        <item>20:00~21:00</item>
+        <item>21:00~22:00</item>
+    </string-array>
+
+
+    <string-array name="height">
+        <item>150cm 이하</item>
+        <item>151cm~160cm</item>
+        <item>161cm~170cm</item>
+        <item>171cm~180cm</item>
+        <item>181cm~190cm</item>
+        <item>191cm 이상</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>40kg 이하</item>
+        <item>41kg~50kg</item>
+        <item>51kg~60kg</item>
+        <item>61kg~70kg</item>
+        <item>71kg~80kg</item>
+        <item>81kg~90kg</item>
+        <item>91kg 이상</item>
+    </string-array>
+
+    <string-array name="purpose">
+        <item>슬림한몸매</item>
+        <item>체력짱짱맨</item>
+        <item>근육돼지</item>
+        <item>탄탄한몸매</item>
+    </string-array>
+</resources>
