@@ -1,0 +1,15 @@
+<?php
+ $con = mysqli_connect("localhost","kjg123kg","ekgus159!@!@","kjg123kg");
+
+ $Product = $_POST["Product"];
+ $Price = $_POST["Price"];
+
+ $statement = mysqli_prepare($con, "INSERT INTO ISBY_Product VALUES(?, ? ,0)");
+ mysqli_stmt_bind_param($statement, "si", $Product , $Price);
+ mysqli_stmt_execute($statement);
+
+ $response = array();
+ $response["success"] = true;
+
+ echo json_encode($response);
+?>
